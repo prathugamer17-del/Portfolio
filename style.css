@@ -1000,3 +1000,461 @@ nav {
 
     .donut { width: 70px; height: 70px; border-width: 15px; }
 }
+/* ================================================
+   MOBILE RESPONSIVE — ALL DEVICES
+================================================ */
+
+/* ---- TABLET & MOBILE (768px & below) ---- */
+@media (max-width: 768px) {
+
+    /* Cursor hide */
+    .cursor, .cursor-follower {
+        display: none !important;
+    }
+    body {
+        cursor: auto;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+        gap: 15px;
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-link {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+        height: 100vh;
+        height: 100dvh;
+        padding: 0 10px;
+    }
+    .hero-title-wrapper {
+        top: 12%;
+        padding: 0 10px;
+    }
+    .hero-title {
+        white-space: nowrap;
+    }
+    .line-1 {
+        font-size: 9vw !important;
+        letter-spacing: 0.2vw !important;
+    }
+    .face-wrapper {
+        width: 220px !important;
+        height: 260px !important;
+        top: 52% !important;
+    }
+    .face-img {
+        max-width: 200px !important;
+    }
+    .face-shadow {
+        width: 120px;
+        height: 20px;
+    }
+    .face-glow {
+        width: 180px;
+        height: 180px;
+    }
+    .hero-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        bottom: 4%;
+        padding: 0 10px;
+    }
+    .tagline {
+        font-size: 9px;
+        line-height: 1.6;
+    }
+    .tagline br {
+        display: none;
+    }
+    .contact-btn {
+        padding: 10px 24px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    /* ---- CUSTOMERS + PROJECT CARDS ---- */
+    .customers-section {
+        padding: 30px 0;
+    }
+    .marquee-container {
+        padding: 20px 0;
+        margin-bottom: 15px;
+    }
+    .marquee-track {
+        gap: 25px;
+    }
+    .logo-item {
+        font-size: 10px;
+        gap: 6px;
+    }
+    .logo-icon {
+        font-size: 14px;
+    }
+    .project-card {
+        width: 160px !important;
+        height: 110px !important;
+        border-radius: 10px !important;
+    }
+    .row-left {
+        margin-bottom: 8px;
+    }
+    .row-right {
+        transform: translateX(-40px) !important;
+    }
+    .project-track {
+        gap: 8px;
+    }
+    .card-overlay {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /* ---- ABOUT ME ---- */
+    .about-section {
+        padding: 70px 15px;
+        min-height: auto;
+    }
+    .about-title {
+        font-size: clamp(32px, 10vw, 55px) !important;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+    }
+    .about-description {
+        font-size: 13px;
+        line-height: 1.7;
+        padding: 0 5px;
+    }
+    .about-description br {
+        display: none;
+    }
+    .about-btn {
+        padding: 10px 24px;
+        font-size: 11px;
+    }
+    .floating-emoji {
+        font-size: 40px !important;
+    }
+    .emoji-1 { top: 3%; left: 3%; }
+    .emoji-2 { top: 5%; right: 3%; }
+    .emoji-3 { bottom: 20%; left: 2%; }
+    .emoji-4 { top: 30%; right: 2%; }
+    .emoji-5 { display: none; }
+    .emoji-6 { display: none; }
+
+    /* ---- SERVICES ---- */
+    .services-section {
+        padding: 70px 15px;
+        min-height: auto;
+    }
+    .services-title {
+        font-size: clamp(32px, 10vw, 55px) !important;
+        margin-bottom: 35px;
+        letter-spacing: -1px;
+    }
+    .service-item {
+        flex-direction: column;
+        gap: 8px;
+        padding: 20px 0;
+    }
+    .service-number {
+        font-size: 28px;
+        min-width: auto;
+    }
+    .service-info h3 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .service-info p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* ---- LIVE PROJECTS ---- */
+    .live-projects-section {
+        padding-top: 70px;
+    }
+    .lp-title {
+        font-size: clamp(32px, 10vw, 55px) !important;
+        margin-bottom: 25px;
+    }
+    .lp-card {
+        height: auto !important;
+        min-height: 60vh;
+        padding: 0 10px 12px !important;
+    }
+    .lp-card[data-card="1"] { top: 0px !important; }
+    .lp-card[data-card="2"] { top: 50px !important; }
+    .lp-card[data-card="3"] { top: 100px !important; }
+
+    .lp-card-inner {
+        min-height: auto !important;
+        max-width: 100% !important;
+        border-radius: 14px;
+    }
+    .lp-header {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        padding: 15px;
+        min-height: auto;
+    }
+    .lp-number {
+        font-size: 24px;
+    }
+    .lp-label {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .lp-name {
+        font-size: 9px;
+    }
+    .lp-btn {
+        padding: 7px 16px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .lp-images {
+        flex-direction: column;
+        padding: 10px 15px 15px;
+        gap: 8px;
+    }
+    .lp-img {
+        min-height: 130px !important;
+        border-radius: 10px;
+    }
+    .lp-img-grid {
+        flex-direction: row;
+        gap: 8px;
+    }
+    .lp-img-small {
+        min-height: 70px !important;
+        border-radius: 10px;
+    }
+
+    /* ---- CLIENT REVIEWS ---- */
+    .reviews-section {
+        padding: 70px 0 50px;
+    }
+    .reviews-header {
+        margin-bottom: 25px;
+        gap: 8px;
+        flex-direction: column;
+    }
+    .reviews-title {
+        font-size: clamp(24px, 7vw, 38px) !important;
+    }
+    .reviews-emoji {
+        font-size: 30px;
+    }
+    .review-row {
+        margin-bottom: 10px;
+    }
+    .review-card {
+        width: 260px !important;
+        padding: 15px !important;
+        gap: 12px !important;
+        border-radius: 12px;
+    }
+    .review-avatar-img {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 12px !important;
+    }
+    .stars {
+        font-size: 12px;
+    }
+    .review-text {
+        font-size: 10px !important;
+        line-height: 1.4;
+    }
+    .review-name {
+        font-size: 8px !important;
+    }
+
+    /* ---- CONTACT ---- */
+    .contact-section {
+        padding: 70px 15px;
+        min-height: auto;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact-title {
+        font-size: clamp(32px, 10vw, 50px) !important;
+        margin-bottom: 8px;
+    }
+    .contact-email {
+        font-size: 13px;
+    }
+    .form-row-2 {
+        flex-direction: column;
+    }
+    .form-group label {
+        font-size: 10px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .form-group textarea {
+        min-height: 60px;
+    }
+    .send-btn {
+        padding: 10px 35px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    /* ---- FOOTER ---- */
+    .site-footer {
+        padding: 0;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 15px;
+    }
+    .footer-logo h3 {
+        font-size: 24px;
+    }
+    .footer-logo p {
+        font-size: 11px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-col h4 {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .footer-col a {
+        font-size: 10px;
+    }
+
+    /* Footer Shapes */
+    .footer-shapes-container {
+        padding: 20px 0;
+    }
+    .shape-item {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .cross { width: 50px !important; height: 50px !important; }
+    .cross-h { height: 18px !important; }
+    .cross-v { width: 18px !important; }
+    .dots-grid { width: 45px !important; height: 45px !important; gap: 5px !important; }
+    .half-circle { width: 50px !important; height: 25px !important; }
+    .circle-fill { width: 50px !important; height: 50px !important; }
+    .zigzag { width: 50px !important; height: 50px !important; }
+    .zz-top, .zz-bottom { width: 22px !important; height: 50px !important; }
+    .bowtie { width: 50px !important; height: 50px !important; }
+    .bt-left { border-top: 24px solid transparent !important; border-bottom: 24px solid transparent !important; border-right: 22px solid #ff8c00 !important; }
+    .bt-right { border-top: 24px solid transparent !important; border-bottom: 24px solid transparent !important; border-left: 22px solid #ff8c00 !important; }
+    .triangle-up { border-left: 25px solid transparent !important; border-right: 25px solid transparent !important; border-bottom: 50px solid #ffffff !important; }
+    .donut { width: 50px !important; height: 50px !important; border-width: 12px !important; }
+    .shapes-track {
+        gap: 12px;
+    }
+}
+
+/* ---- SMALL PHONES (480px & below) ---- */
+@media (max-width: 480px) {
+    nav {
+        gap: 8px;
+        padding: 10px 5px;
+    }
+    .nav-link {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .line-1 {
+        font-size: 7.5vw !important;
+    }
+
+    .face-wrapper {
+        width: 180px !important;
+        height: 220px !important;
+        top: 50% !important;
+    }
+    .face-img {
+        max-width: 160px !important;
+    }
+
+    .tagline {
+        font-size: 8px;
+    }
+    .contact-btn {
+        padding: 8px 18px;
+        font-size: 9px;
+    }
+
+    .project-card {
+        width: 130px !important;
+        height: 90px !important;
+        border-radius: 8px !important;
+    }
+
+    .about-title {
+        font-size: clamp(26px, 11vw, 42px) !important;
+    }
+
+    .services-title, .lp-title {
+        font-size: clamp(26px, 11vw, 42px) !important;
+    }
+
+    .review-card {
+        width: 220px !important;
+    }
+
+    .contact-title {
+        font-size: clamp(26px, 10vw, 40px) !important;
+    }
+
+    .shape-item {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .cross { width: 38px !important; height: 38px !important; }
+    .cross-h { height: 14px !important; }
+    .cross-v { width: 14px !important; }
+    .dots-grid { width: 35px !important; height: 35px !important; }
+    .half-circle { width: 38px !important; height: 19px !important; }
+    .circle-fill { width: 38px !important; height: 38px !important; }
+    .donut { width: 38px !important; height: 38px !important; border-width: 9px !important; }
+}
+
+/* ---- LANDSCAPE MOBILE ---- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 10px 30px;
+    }
+    .face-wrapper {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 130px !important;
+        height: 160px !important;
+        margin: 15px auto;
+    }
+    .hero-bottom {
+        position: relative;
+        bottom: auto;
+        margin-top: 15px;
+    }
+}
